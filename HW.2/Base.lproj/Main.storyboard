@@ -87,7 +87,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ghz-3I-WKp">
                                         <rect key="frame" x="111" y="0.0" width="177" height="110"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-1V-Rpl" userLabel="Red Slider">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-1V-Rpl" userLabel="Red Slider">
                                                 <rect key="frame" x="-2" y="0.0" width="181" height="31"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <imageReference key="minimumValueImage" image="sun.min" catalog="system" renderingMode="hierarchical">
@@ -104,10 +104,13 @@
                                                         <color systemColor="tertiaryLabelColor"/>
                                                     </hierarchicalColors>
                                                 </imageReference>
+                                                <connections>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="oSN-sY-b3W"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7up-Am-eOy" userLabel="Green Slider">
                                                 <rect key="frame" x="-2" y="40" width="181" height="31"/>
-                                                <color key="tintColor" red="0.39161944389343262" green="0.90946477651596069" blue="0.34475451707839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <imageReference key="minimumValueImage" image="sun.min" catalog="system" renderingMode="hierarchical">
                                                     <hierarchicalColors>
                                                         <color systemColor="systemBlueColor"/>
@@ -122,9 +125,15 @@
                                                         <color systemColor="tertiaryLabelColor"/>
                                                     </hierarchicalColors>
                                                 </imageReference>
+                                                <connections>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="cbX-2c-fta"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" minimumValueImage="sun.min" catalog="system" maximumValueImage="sun.min.fill" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-iM-boQ" userLabel="BlueSlider">
                                                 <rect key="frame" x="-2" y="80" width="181" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="7kD-P1-DgP"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -168,6 +177,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

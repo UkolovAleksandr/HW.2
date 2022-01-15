@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var colorView: UIView!
     
@@ -20,14 +19,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         colorView.layer.cornerRadius = 20
-        // Do any additional setup after loading the view.
+        
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+        redLabel.text = String(format: "%.f", redSlider.value)
+        greenLabel.text = String(format: "%.f", greenSlider.value)
+        blueLabel.text = String(format: "%.f", blueSlider.value)
     }
-
+    
+    @IBAction func rgbSlider (_ sender: UISlider) {
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+        
+        redLabel.text = String(format: "%.f", redSlider.value)
+        greenLabel.text = String(format: "%.f", greenSlider.value)
+        blueLabel.text = String(format: "%.f", blueSlider.value)
+    }
 
 }
 
