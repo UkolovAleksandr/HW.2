@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var colorView: UIView!
     
-    @IBOutlet weak var redLable: UILabel!
-    @IBOutlet weak var greenLable: UILabel!
-    @IBOutlet weak var blueLable: UILabel!
+    @IBOutlet weak var redLabel: UILabel!
+    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var blueLabel: UILabel!
     
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
@@ -23,8 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorView.layer.cornerRadius = 12
-        
+        colorView.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
 

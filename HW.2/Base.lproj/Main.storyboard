@@ -143,18 +143,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueLabel" destination="gtm-Ho-fq0" id="C0W-3v-BYO"/>
-                        <outlet property="blueLable" destination="fGl-dW-db9" id="II1-M3-CwY"/>
-                        <outlet property="blueSlide" destination="yi6-iM-boQ" id="zDC-u5-znV"/>
-                        <outlet property="blueSlider" destination="yi6-iM-boQ" id="thC-L0-h6N"/>
-                        <outlet property="colorViev" destination="lvp-XG-5z8" id="hBy-xe-c42"/>
-                        <outlet property="colorView" destination="lvp-XG-5z8" id="J3E-my-cYg"/>
-                        <outlet property="greenLabel" destination="3hm-vQ-3uZ" id="V0R-cX-b1C"/>
-                        <outlet property="greenLable" destination="7Pc-8I-NVb" id="gNZ-hL-0zo"/>
-                        <outlet property="greenSlider" destination="7up-Am-eOy" id="Tv0-tk-NDr"/>
-                        <outlet property="redLabel" destination="tA5-l8-tnt" id="fJG-B5-sOu"/>
-                        <outlet property="redLable" destination="nRx-1q-hD8" id="Bol-a4-HFa"/>
-                        <outlet property="redSlider" destination="Szt-1V-Rpl" id="GZe-mg-ej6"/>
+                        <outlet property="blueLabel" destination="fGl-dW-db9" id="yCZ-Cm-Izz"/>
+                        <outlet property="blueSlider" destination="yi6-iM-boQ" id="9Nj-Vz-dyf"/>
+                        <outlet property="colorView" destination="lvp-XG-5z8" id="brx-Je-orH"/>
+                        <outlet property="greenLabel" destination="7Pc-8I-NVb" id="vvL-i2-x6q"/>
+                        <outlet property="greenSlider" destination="7up-Am-eOy" id="wmM-3l-m07"/>
+                        <outlet property="redLabel" destination="nRx-1q-hD8" id="cr3-Eu-4Jx"/>
+                        <outlet property="redSlider" destination="Szt-1V-Rpl" id="tnf-nM-aG5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
